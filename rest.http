@@ -1,0 +1,36 @@
+GET http://localhost:3000
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2MjcwMzAzMTYsImV4cCI6MTYyNzAzMDM0NiwiYXVkIjoiNjBmYTRmMmE0Mzk5MTQxNTU4NmM0MGE4IiwiaXNzIjoiZXhhbXBsZS5jb20ifQ.hoj7uct__ZnB0tIFtMXcNAxP1uRj8d9mwd1mhZLe5rY
+
+### Login route
+POST  http://localhost:3000/auth/login
+Content-Type: application/json
+
+{
+    "email":"arjun12@pehel.in",
+    "password":"sgsdghd67"
+}
+
+### Register route
+POST  http://localhost:3000/auth/register
+Content-Type: application/json
+
+{
+    "email":"arjun12@pehel.in",
+    "password":"sgsdghd67"
+}
+
+### Refresh-token route
+POST  http://localhost:3000/auth/refresh-token
+Content-Type: application/json
+
+{
+  "refreshToken" : "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2MjcwMzE4NTcsImV4cCI6MTY1ODU4OTQ1NywiYXVkIjoiNjBmYTRmMmE0Mzk5MTQxNTU4NmM0MGE4IiwiaXNzIjoiZXhhbXBsZS5jb20ifQ.Z399oaqQ_GwcY_xBYCtk6hLb7fqCy7ZQ387b6WMKjgc"
+}
+
+### Logout route
+DELETE   http://localhost:3000/auth/logout
+Content-Type: application/json
+
+{
+ "refreshToken" : "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2MjcwNDM5NjUsImV4cCI6MTY1ODYwMTU2NSwiYXVkIjoiNjBmYTRmMmE0Mzk5MTQxNTU4NmM0MGE4IiwiaXNzIjoiZXhhbXBsZS5jb20ifQ.aCyWT_RWM6N-2M0JSgJksdbGAfxuBDaMH8lm0rCCqgQ"
+}

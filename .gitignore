@@ -1,0 +1,10 @@
+/node_modules
+/.vscode
+/.nyc_*
+/coverage
+.env
+.env.test
+/logs
+debug.log
+certificate.crt
+key.pem
